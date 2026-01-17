@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Diderik | Behavioural Scientist Blog</title>
+  <link>https://dicodey.github.io/my-website</link>
+  <description>Thoughts on human decision making and digital interventions.</description>
+  <atom:link href="https://dicodey.github.io/my-website/rss.xml" rel="self" type="application/rss+xml" />
+  
+    <item>
+      <title><![CDATA[The Architecture of Choice]]></title>
+      <link>https://dicodey.github.io/my-website/#/blog/architecture-of-choice</link>
+      <guid>https://dicodey.github.io/my-website/#/blog/architecture-of-choice</guid>
+      <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[How small changes in the way options are presented can drastically influence our decisions.]]></description>
+    </item>
+  
+    <item>
+      <title><![CDATA[Digital Minimalism in a Hyper-connected World]]></title>
+      <link>https://dicodey.github.io/my-website/#/blog/digital-minimalism</link>
+      <guid>https://dicodey.github.io/my-website/#/blog/digital-minimalism</guid>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Exploring the psychological benefits of reducing screen time and curating your digital environment.]]></description>
+    </item>
+  
+    <item>
+      <title><![CDATA[The Sunk Cost Fallacy: Letting Go]]></title>
+      <link>https://dicodey.github.io/my-website/#/blog/sunk-cost-fallacy</link>
+      <guid>https://dicodey.github.io/my-website/#/blog/sunk-cost-fallacy</guid>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Why we cling to failing projects and how to overcome the fear of quitting.]]></description>
+    </item>
+  
+</channel>
+</rss>
