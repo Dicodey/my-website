@@ -26,7 +26,7 @@ const Hero = () => {
                         color: 'var(--text-secondary)',
                         marginBottom: '2rem',
                     }}>
-                        Behavioural Scientist specializing in human decision making and digital interventions.
+                        I'm a Behavioural Scientist who geeks out over why we do the things we do—and how a little nudge can make a big difference.
                     </h2>
                     <div style={{ display: 'flex', gap: '1rem' }}>
                         <a href="#about" style={{

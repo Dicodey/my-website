@@ -2,10 +2,10 @@ const Contact = () => {
     return (
         <section id="contact" style={{ backgroundColor: 'var(--bg-color)', paddingBottom: '4rem' }}>
             <div className="container" style={{ textAlign: 'center', maxWidth: '600px' }}>
-                <h2>Get in Touch</h2>
+                <h2>Let's Chat!</h2>
                 <p style={{ marginBottom: '2rem', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
-                    I'm always open to discussing new research, speaking opportunities, or just chatting about
-                    behavioural science. Feel free to reach out.
+                    Whether you've got a wild idea, a question about how brains work, or just want to say hi—I'd love to hear from you.
+                    No boring contact forms here, just drop me a line!
                 </p>
                 <a href="mailto:hello@di.example.com" style={{
                     display: 'inline-block',

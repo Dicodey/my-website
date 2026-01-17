@@ -5,15 +5,15 @@ const About = () => {
                 <h2>About Me</h2>
                 <div style={{ maxWidth: '800px', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
                     <p style={{ marginBottom: '1.5rem' }}>
-                        I am a Behavioural Scientist passionate about understanding why people do what they do.
-                        My work sits at the intersection of psychology, data science, and design, aiming to create
-                        interventions that help people make better decisions for themselves and society.
+                        Ever wonder why you snooze your alarm five times or can't resist that "one more episode" button?
+                        Yeah, me too—except I turned that curiosity into a career! I spend my days (and sometimes nights)
+                        figuring out the quirky ways our brains make decisions, and how we can design systems that
+                        actually help us instead of tripping us up.
                     </p>
                     <p>
-                        With a background in academic research and applied behavioural insights, I strive to bridge
-                        the gap between theoretical models and real-world application. When I'm not analyzing data
-                        or designing experiments, you can find me exploring the outdoors or reading about the latest
-                        tech trends.
+                        When I'm not buried in research papers or running experiments, you'll probably find me
+                        on a long walk with a podcast, tinkering with some new tech, or trying to convince myself
+                        that my coffee habit is "part of the research."
                     </p>
                 </div>
             </div>

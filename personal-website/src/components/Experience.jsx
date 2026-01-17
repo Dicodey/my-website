@@ -4,28 +4,28 @@ const Experience = () => {
             role: "Senior Behavioural Scientist",
             company: "Institute of Behavioural Insights",
             period: "2023 - Present",
-            description: "Leading randomized controlled trials to improve public policy outcomes."
+            description: "Running real-world experiments to help governments make policies that actually work for humans (imagine that!)."
         },
         {
             role: "Research Fellow",
             company: "University of London",
             period: "2020 - 2023",
-            description: "Conducted research on digital nudges and habit formation."
+            description: "Explored how tiny digital nudges can turn 'I'll do it later' into 'done!'—and published it all."
         }
     ];
 
     const personalExp = [
         {
-            role: "Volunteer Data Analyst",
+            role: "Volunteer Data Wizard",
             org: "Community Health Initiative",
             period: "2021 - Present",
-            description: "Helping local non-profits visualize their impact data."
+            description: "Helping local charities turn messy spreadsheets into beautiful, story-telling dashboards."
         },
         {
-            role: "Marathon Runner",
+            role: "Marathon Survivor",
             org: "London Marathon",
             period: "2022",
-            description: "Completed the London Marathon raising funds for mental health research."
+            description: "Ran 42km to prove to myself I could. Raised money for mental health research along the way!"
         }
     ];
 
