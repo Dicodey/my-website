@@ -7,7 +7,7 @@ const Contact = () => {
                     I'm always open to discussing new research, speaking opportunities, or just chatting about
                     behavioural science. Feel free to reach out.
                 </p>
-                <a href="mailto:hello@diderik.example.com" style={{
+                <a href="mailto:hello@di.example.com" style={{
                     display: 'inline-block',
                     padding: '1rem 3rem',
                     backgroundColor: 'var(--text-primary)',
@@ -17,7 +17,7 @@ const Contact = () => {
                     fontWeight: 600,
                     transition: 'background-color 0.3s'
                 }}>
-                    hello@diderik.example.com
+                    hello@di.example.com
                 </a>
 
                 <div style={{ marginTop: '3rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>

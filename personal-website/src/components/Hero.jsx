@@ -18,7 +18,7 @@ const Hero = () => {
             }}>
                 <div style={{ flex: '1', minWidth: '300px' }}>
                     <h1 style={{ fontSize: '4rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>
-                        Hello, I'm Diderik.
+                        Hello, I'm Di.
                     </h1>
                     <h2 style={{
                         fontSize: '2rem',
@@ -55,17 +55,16 @@ const Hero = () => {
                 <div style={{
                     flex: '0 0 auto',
                     width: '350px',
-                    height: '350px',
-                    borderRadius: '50%',
+                    borderRadius: '24px',
                     overflow: 'hidden',
                     border: '8px solid white',
-                    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                    boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
                     margin: '0 auto'
                 }}>
                     <img
                         src={profileImg}
-                        alt="Diderik"
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        alt="Di"
+                        style={{ width: '100%', height: 'auto', display: 'block' }}
                     />
                 </div>
             </div>

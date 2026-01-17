@@ -18,7 +18,7 @@ const BlogPost = () => {
     return (
         <div className="container" style={{ padding: '8rem 0', maxWidth: '800px' }}>
             <Helmet>
-                <title>{post.title} | Diderik</title>
+                <title>{post.title} | Di</title>
                 <meta name="description" content={post.excerpt} />
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.excerpt} />

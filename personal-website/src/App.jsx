@@ -56,7 +56,7 @@ function App() {
           </main>
           <footer style={{ padding: '2rem 0', textAlign: 'center', borderTop: '1px solid var(--border-color)', backgroundColor: 'white', color: 'var(--text-secondary)' }}>
             <div className="container">
-              <p>© {new Date().getFullYear()} Diderik. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Di. All rights reserved.</p>
             </div>
           </footer>
         </div>

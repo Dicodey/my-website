@@ -35,7 +35,7 @@ const Navbar = () => {
         <nav style={navStyle}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-serif)', color: 'var(--text-primary)' }}>
-                    Dx.
+                    Di
                 </Link>
                 <div className="nav-links">
                     <Link to="/about" style={linkStyle}>About</Link>
