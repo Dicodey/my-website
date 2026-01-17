@@ -3,7 +3,7 @@ import { posts } from '../data/posts';
 
 const Blog = () => {
     return (
-        <section id="blog" style={{ backgroundColor: 'white' }}>
+        <section id="thoughts" style={{ backgroundColor: 'white' }}>
             <div className="container">
                 <h2>Latest Thoughts</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '2rem' }}>

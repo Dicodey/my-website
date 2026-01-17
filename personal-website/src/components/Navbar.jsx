@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -33,14 +34,14 @@ const Navbar = () => {
     return (
         <nav style={navStyle}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <a href="#" style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-serif)', color: 'var(--text-primary)' }}>
+                <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-serif)', color: 'var(--text-primary)' }}>
                     Dx.
-                </a>
+                </Link>
                 <div className="nav-links">
-                    <a href="#about" style={linkStyle}>About</a>
-                    <a href="#experience" style={linkStyle}>Experience</a>
-                    <a href="#blog" style={linkStyle}>Blog</a>
-                    <a href="#contact" style={linkStyle}>Contact</a>
+                    <Link to="/about" style={linkStyle}>About</Link>
+                    <Link to="/experience" style={linkStyle}>Experience</Link>
+                    <Link to="/thoughts" style={linkStyle}>Blog</Link>
+                    <Link to="/contact" style={linkStyle}>Contact</Link>
                 </div>
             </div>
         </nav>

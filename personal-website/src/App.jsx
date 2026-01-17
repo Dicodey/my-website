@@ -8,7 +8,25 @@ import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
 import Contact from './components/Contact';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 function Home() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // If the path is a section (like /about), scroll to it
+    const id = pathname.substring(1);
+    if (id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [pathname]);
+
   return (
     <>
       <Hero />
@@ -29,6 +47,10 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<Home />} />
+              <Route path="/experience" element={<Home />} />
+              <Route path="/thoughts" element={<Home />} />
+              <Route path="/contact" element={<Home />} />
               <Route path="/blog/:id" element={<BlogPost />} />
             </Routes>
           </main>
