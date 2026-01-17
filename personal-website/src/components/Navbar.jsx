@@ -28,7 +28,8 @@ const Navbar = () => {
         marginLeft: '2rem',
         fontWeight: 500,
         color: 'var(--text-primary)',
-        fontSize: '0.95rem'
+        fontSize: '0.95rem',
+        whiteSpace: 'nowrap'
     };
 
     return (
@@ -37,11 +38,15 @@ const Navbar = () => {
                 <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-serif)', color: 'var(--text-primary)' }}>
                     Di
                 </Link>
-                <div className="nav-links">
-                    <Link to="/about" style={linkStyle}>About</Link>
-                    <Link to="/experience" style={linkStyle}>Experience</Link>
-                    <Link to="/thoughts" style={linkStyle}>Blog</Link>
-                    <Link to="/contact" style={linkStyle}>Contact</Link>
+                <div className="nav-links" style={{
+                    display: 'flex',
+                    gap: '0.5rem',
+                    fontSize: 'clamp(0.75rem, 2vw, 0.95rem)'
+                }}>
+                    <Link to="/about" style={{ ...linkStyle, marginLeft: 0 }}>About</Link>
+                    <Link to="/experience" style={{ ...linkStyle, marginLeft: 0 }}>Experience</Link>
+                    <Link to="/thoughts" style={{ ...linkStyle, marginLeft: 0 }}>Blog</Link>
+                    <Link to="/contact" style={{ ...linkStyle, marginLeft: 0 }}>Contact</Link>
                 </div>
             </div>
         </nav>

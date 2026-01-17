@@ -16,36 +16,38 @@ const Hero = () => {
                 gap: '4rem',
                 flexWrap: 'wrap-reverse'
             }}>
-                <div style={{ flex: '1', minWidth: '300px' }}>
-                    <h1 style={{ fontSize: '4rem', marginBottom: '1rem', color: 'var(--text-primary)' }}>
+                <div style={{ flex: '1', minWidth: '280px' }}>
+                    <h1 style={{ fontSize: 'clamp(2.5rem, 8vw, 4rem)', marginBottom: '1rem', color: 'var(--text-primary)' }}>
                         Hello, I'm Di.
                     </h1>
                     <h2 style={{
-                        fontSize: '2rem',
+                        fontSize: 'clamp(1.1rem, 4vw, 2rem)',
                         fontWeight: 400,
                         color: 'var(--text-secondary)',
                         marginBottom: '2rem',
                     }}>
                         I'm a Behavioural Scientist who geeks out over why we do the things we do—and how a little nudge can make a big difference.
                     </h2>
-                    <div style={{ display: 'flex', gap: '1rem' }}>
+                    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                         <a href="#about" style={{
                             display: 'inline-block',
-                            padding: '1rem 2rem',
+                            padding: 'clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem)',
                             backgroundColor: 'var(--accent-primary)',
                             color: 'white',
                             borderRadius: '4px',
-                            fontWeight: 600
+                            fontWeight: 600,
+                            fontSize: 'clamp(0.9rem, 2vw, 1rem)'
                         }}>
                             Learn More
                         </a>
                         <a href="#contact" style={{
                             display: 'inline-block',
-                            padding: '1rem 2rem',
+                            padding: 'clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem)',
                             border: '2px solid var(--accent-primary)',
                             color: 'var(--accent-primary)',
                             borderRadius: '4px',
-                            fontWeight: 600
+                            fontWeight: 600,
+                            fontSize: 'clamp(0.9rem, 2vw, 1rem)'
                         }}>
                             Get in Touch
                         </a>
@@ -54,7 +56,7 @@ const Hero = () => {
 
                 <div style={{
                     flex: '0 0 auto',
-                    width: '350px',
+                    width: 'min(350px, 85vw)',
                     borderRadius: '24px',
                     overflow: 'hidden',
                     border: '8px solid white',

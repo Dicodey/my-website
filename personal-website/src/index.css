@@ -1,12 +1,14 @@
 :root {
-  /* Colors - Clean Academic/Professional */
+  /* Colors - Clean Academic/Professional with Orange Accents */
   --bg-color: #fafafa;
   --text-primary: #1f2937;
   --text-secondary: #4b5563;
-  --accent-primary: #2563eb;
-  /* Royal Blue */
-  --accent-secondary: #1e40af;
-  /* Darker Blue */
+  --accent-primary: #f97316;
+  /* Vibrant Orange */
+  --accent-secondary: #ea580c;
+  /* Darker Orange */
+  --accent-hover: #fb923c;
+  /* Lighter Orange for hover */
   --surface-color: #ffffff;
   --border-color: #e5e7eb;
 
@@ -45,10 +47,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   color: var(--text-primary);
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
+  font-weight: 700;
 }
 
 a {
@@ -59,6 +62,7 @@ a {
 
 a:hover {
   color: var(--accent-secondary);
+  text-decoration: underline;
 }
 
 ul {
@@ -92,4 +96,21 @@ section {
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
 }

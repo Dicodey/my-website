@@ -15,8 +15,17 @@ const Contact = () => {
                     borderRadius: '4px',
                     fontSize: '1.1rem',
                     fontWeight: 600,
-                    transition: 'background-color 0.3s'
-                }}>
+                    transition: 'all 0.3s',
+                    border: '2px solid var(--text-primary)'
+                }}
+                    onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = 'var(--accent-primary)';
+                        e.target.style.borderColor = 'var(--accent-primary)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = 'var(--text-primary)';
+                        e.target.style.borderColor = 'var(--text-primary)';
+                    }}>
                     hello@di.example.com
                 </a>
 

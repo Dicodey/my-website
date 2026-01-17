@@ -16,7 +16,7 @@ const BlogPost = () => {
     }
 
     return (
-        <div className="container" style={{ padding: '8rem 0', maxWidth: '800px' }}>
+        <div className="container" style={{ padding: 'clamp(4rem, 10vw, 8rem) clamp(1rem, 3vw, 2rem)', maxWidth: '800px' }}>
             <Helmet>
                 <title>{post.title} | Di</title>
                 <meta name="description" content={post.excerpt} />
@@ -33,10 +33,10 @@ const BlogPost = () => {
                 <div style={{ color: 'var(--accent-primary)', fontWeight: 600, marginBottom: '1rem' }}>
                     {new Date(post.date).toLocaleDateString()} &bull; {post.readTime}
                 </div>
-                <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>{post.title}</h1>
+                <h1 style={{ fontSize: 'clamp(1.75rem, 5vw, 3rem)', marginBottom: '2rem' }}>{post.title}</h1>
                 <div
                     className="blog-content"
-                    style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'var(--text-secondary)' }}
+                    style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', lineHeight: '1.8', color: 'var(--text-secondary)' }}
                     dangerouslySetInnerHTML={{ __html: post.content }}
                 />
             </article>
