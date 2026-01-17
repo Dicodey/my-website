@@ -1,0 +1,50 @@
+import { useState, useEffect } from 'react';
+
+const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const navStyle = {
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
+        backdropFilter: isScrolled ? 'blur(10px)' : 'none',
+        boxShadow: isScrolled ? '0 2px 10px rgba(0,0,0,0.1)' : 'none',
+        transition: 'all 0.3s ease',
+        zIndex: 1000,
+        padding: '1rem 0'
+    };
+
+    const linkStyle = {
+        marginLeft: '2rem',
+        fontWeight: 500,
+        color: 'var(--text-primary)',
+        fontSize: '0.95rem'
+    };
+
+    return (
+        <nav style={navStyle}>
+            <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <a href="#" style={{ fontSize: '1.5rem', fontWeight: 'bold', fontFamily: 'var(--font-serif)', color: 'var(--text-primary)' }}>
+                    Dx.
+                </a>
+                <div className="nav-links">
+                    <a href="#about" style={linkStyle}>About</a>
+                    <a href="#experience" style={linkStyle}>Experience</a>
+                    <a href="#blog" style={linkStyle}>Blog</a>
+                    <a href="#contact" style={linkStyle}>Contact</a>
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
