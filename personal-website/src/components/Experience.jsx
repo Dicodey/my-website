@@ -29,7 +29,16 @@ const Experience = () => {
     const Item = ({ item }) => (
         <div className="card" style={{ marginBottom: '1.5rem' }}>
             <h4 style={{ marginBottom: '0.5rem' }}>{item.role}</h4>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <div style={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+                justifyContent: 'space-between',
+                marginBottom: '0.5rem',
+                color: 'var(--text-secondary)',
+                fontSize: '0.9rem',
+                gap: '0.5rem'
+            }}>
                 <span style={{ fontWeight: 600 }}>{item.company}</span>
                 <span>{item.period}</span>
             </div>
@@ -41,7 +50,7 @@ const Experience = () => {
         <section id="experience" style={{ backgroundColor: 'var(--bg-color)' }}>
             <div className="container">
                 <h2 style={{ marginBottom: '3rem' }}>Experience</h2>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: '2rem' }}>
                     {experiences.map((item, index) => <Item key={index} item={item} />)}
                 </div>
             </div>

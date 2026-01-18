@@ -11,6 +11,8 @@ import Contact from './components/Contact';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+import PhotoGallery from './components/PhotoGallery';
+
 function Home() {
   const { pathname } = useLocation();
 
@@ -51,12 +53,13 @@ function App() {
               <Route path="/experience" element={<Home />} />
               <Route path="/thoughts" element={<Home />} />
               <Route path="/contact" element={<Home />} />
+              <Route path="/photography" element={<PhotoGallery />} />
               <Route path="/blog/:id" element={<BlogPost />} />
             </Routes>
           </main>
           <footer style={{ padding: '2rem 0', textAlign: 'center', borderTop: '1px solid var(--border-color)', backgroundColor: 'white', color: 'var(--text-secondary)' }}>
             <div className="container">
-              <p>© {new Date().getFullYear()} Di. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Di. All rights reserved<Link to="/photography" style={{ color: 'inherit', textDecoration: 'none', cursor: 'default' }}>.</Link></p>
             </div>
           </footer>
         </div>
