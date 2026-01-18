@@ -9,25 +9,36 @@ const BrainBlob = ({ className, color, opacity = 0.65, delay = '0s' }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="brain-blob-svg"
             >
+                {/* Main Mass (No Blur) */}
                 <path
-                    d="M30,-50 C10,-60 -10,-60 -30,-50 C-45,-40 -50,-20 -50,0 C-50,20 -40,40 -20,50 C0,60 20,60 40,50 C50,40 55,20 55,0 C55,-20 50,-40 30,-50 Z M-5,-35 Q0,-45 5,-35 M-15,-20 Q-25,-10 -15,0 M15,-20 Q25,-10 15,0"
+                    className="brain-mass"
+                    d="M100,20 C140,20 180,60 180,100 C180,140 140,180 100,180 C60,180 20,140 20,100 C20,60 60,20 100,20 Z"
+                    fill={color}
+                    opacity={opacity * 0.8}
+                />
+
+                {/* Brain Outline/Shape (Sharp) */}
+                <path
+                    className="brain-outline"
+                    d="M100,40 C115,40 130,45 145,55 C160,65 165,85 165,100 C165,115 160,135 145,145 C130,155 115,160 100,160 C85,160 70,155 55,145 C40,135 35,115 35,100 C35,85 40,65 55,55 C70,45 85,40 100,40 Z"
                     fill={color}
                     opacity={opacity}
-                    transform="translate(100 100) scale(2.0)"
                 />
-                <g stroke={color} strokeWidth="2.5" fill="none" opacity="0.7" transform="translate(100 100) scale(2.0)">
-                    {/* Central sulcus */}
-                    <path d="M0,-45 C2,-20 -2,20 0,45" opacity="0.4" />
 
-                    {/* Left hemisphere convolutions */}
-                    <path d="M-15,-30 Q-25,-25 -20,-15 T-25,0 T-15,15" />
-                    <path d="M-35,-10 Q-40,0 -35,10" />
-                    <path d="M-10,25 Q-20,35 -5,40" />
+                {/* Internal Convolutions (Brain Texture) */}
+                <g stroke={color} strokeWidth="2.5" fill="none" opacity="0.9">
+                    {/* Left side */}
+                    <path d="M70,70 C60,80 60,90 70,100 T70,130" />
+                    <path d="M50,90 C45,100 45,110 50,120" />
+                    <path d="M85,85 C75,95 75,105 85,115" />
 
-                    {/* Right hemisphere convolutions */}
-                    <path d="M15,-30 Q25,-25 20,-15 T25,0 T15,15" />
-                    <path d="M35,-10 Q40,0 35,10" />
-                    <path d="M10,25 Q20,35 5,40" />
+                    {/* Right side */}
+                    <path d="M130,70 C140,80 140,90 130,100 T130,130" />
+                    <path d="M150,90 C155,100 155,110 150,120" />
+                    <path d="M115,85 C125,95 125,105 115,115" />
+
+                    {/* Fissure */}
+                    <path d="M100,45 L100,155" strokeOpacity="0.5" strokeWidth="1.5" />
                 </g>
             </svg>
         </div>
