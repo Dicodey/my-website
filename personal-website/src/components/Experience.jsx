@@ -36,7 +36,7 @@ const Experience = () => {
                 justifyContent: 'space-between',
                 marginBottom: '0.5rem',
                 color: 'var(--text-secondary)',
-                fontSize: '0.9rem',
+                fontSize: '1rem',
                 gap: '0.5rem'
             }}>
                 <span style={{ fontWeight: 600 }}>{item.company}</span>
@@ -47,7 +47,7 @@ const Experience = () => {
     );
 
     return (
-        <section id="experience" style={{ backgroundColor: 'var(--bg-color)' }}>
+        <section id="experience">
             <div className="container">
                 <h2 style={{ marginBottom: '3rem' }}>Experience</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: '2rem' }}>

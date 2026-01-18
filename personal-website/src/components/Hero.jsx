@@ -6,7 +6,6 @@ const Hero = () => {
             minHeight: '100vh',
             display: 'flex',
             alignItems: 'center',
-            background: 'linear-gradient(to bottom, var(--bg-color), #f0f4f8)',
             paddingTop: '80px'
         }}>
             <div className="container" style={{

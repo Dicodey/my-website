@@ -1,9 +1,18 @@
 const About = () => {
     return (
-        <section id="about" style={{ backgroundColor: 'white' }}>
+        <section id="about">
             <div className="container">
                 <h2>About Me</h2>
-                <div style={{ maxWidth: '800px', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
+                <div style={{
+                    maxWidth: '800px',
+                    fontSize: '1.25rem',
+                    color: 'var(--text-secondary)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.85)',
+                    backdropFilter: 'blur(10px)',
+                    padding: '2.5rem',
+                    borderRadius: '12px',
+                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)'
+                }}>
                     <p style={{ marginBottom: '1.5rem' }}>
                         Ever wonder why you snooze your alarm five times or can't resist that "one more episode" button?
                         Yeah, me too—except I turned that curiosity into a career! I spend my days (and sometimes nights)

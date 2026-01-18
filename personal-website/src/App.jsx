@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
 import Contact from './components/Contact';
+import Background from './components/Background';
 
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -42,6 +43,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <Background />
         <div className="app">
           <Navbar />
           <main>

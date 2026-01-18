@@ -1,0 +1,111 @@
+/* Background Wrapper */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  pointer-events: none;
+}
+
+.blobs-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4000px;
+  /* Matching the approximate path of the original background */
+}
+
+.brain-blob-container {
+  position: absolute;
+  width: 500px;
+  /* Mobile increased size */
+  height: 500px;
+  opacity: 0.85;
+  /* Slightly more visible */
+  filter: blur(50px);
+  animation: float 40s ease-in-out infinite alternate;
+  /* Slower */
+}
+
+.brain-blob-svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(15px, -10px) rotate(1deg);
+    /* Subtle movement */
+  }
+
+  100% {
+    transform: translate(-10px, 15px) rotate(-1deg);
+  }
+}
+
+/* Individual blob positions */
+/* Individual blob positions - Mobile (more spaced out) */
+.blob-1 {
+  top: 150px;
+  left: -10%;
+}
+
+.blob-2 {
+  top: 600px;
+  right: -15%;
+}
+
+.blob-3 {
+  top: 1200px;
+  left: -5%;
+  animation-duration: 45s;
+}
+
+.blob-4 {
+  top: 1800px;
+  right: -10%;
+  animation-duration: 38s;
+}
+
+.blob-5 {
+  top: 2500px;
+  left: 15%;
+  animation-duration: 42s;
+}
+
+.blob-6 {
+  top: 3200px;
+  left: -5%;
+  animation-duration: 40s;
+}
+
+.blob-7 {
+  top: 3800px;
+  right: 5%;
+  animation-duration: 44s;
+}
+
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+  .brain-blob-container {
+    width: 700px;
+    height: 700px;
+    filter: blur(70px);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .brain-blob-container {
+    animation: none;
+  }
+}
