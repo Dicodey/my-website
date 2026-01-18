@@ -40,8 +40,8 @@ const Navbar = () => {
                 </Link>
                 <div className="nav-links" style={{
                     display: 'flex',
-                    gap: '0.5rem',
-                    fontSize: 'clamp(0.75rem, 2vw, 0.95rem)'
+                    gap: 'clamp(0.8rem, 3vw, 2rem)',
+                    fontSize: 'clamp(0.85rem, 2vw, 1rem)'
                 }}>
                     <Link to="/about" style={{ ...linkStyle, marginLeft: 0 }}>About</Link>
                     <Link to="/experience" style={{ ...linkStyle, marginLeft: 0 }}>Experience</Link>
