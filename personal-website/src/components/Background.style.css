@@ -25,9 +25,10 @@
   width: 500px;
   /* Mobile increased size */
   height: 500px;
-  opacity: 0.85;
-  /* Slightly more visible */
-  filter: blur(50px);
+  opacity: 0.6;
+  /* Lowered opacity since it is sharper now */
+  filter: blur(10px);
+  /* Significantly reduced blur */
   animation: float 40s ease-in-out infinite alternate;
   /* Slower */
 }
