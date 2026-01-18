@@ -10,23 +10,24 @@ const BrainBlob = ({ className, color, opacity = 0.65, delay = '0s' }) => {
                 className="brain-blob-svg"
             >
                 <path
-                    d="M30,-50 C10,-65 -10,-65 -30,-50 C-55,-30 -60,0 -50,30 C-35,60 0,65 35,60 C60,50 65,20 60,-10 C55,-35 45,-45 30,-50 Z"
+                    d="M30,-50 C10,-60 -10,-60 -30,-50 C-45,-40 -50,-20 -50,0 C-50,20 -40,40 -20,50 C0,60 20,60 40,50 C50,40 55,20 55,0 C55,-20 50,-40 30,-50 Z M-5,-35 Q0,-45 5,-35 M-15,-20 Q-25,-10 -15,0 M15,-20 Q25,-10 15,0"
                     fill={color}
                     opacity={opacity}
-                    transform="translate(100 100) scale(2.2)"
+                    transform="translate(100 100) scale(2.0)"
                 />
-                {/* Brain gyri/sulci */}
-                <g stroke={color} strokeWidth="1.5" fill="none" opacity="0.5" transform="translate(100 100) scale(2.2)">
-                    {/* Left Hemisphere hint */}
-                    <path d="M-15,-40 Q-25,-20 -15,0 T-20,40" />
-                    <path d="M-30,-20 Q-40,0 -25,20" />
-                    
-                    {/* Right Hemisphere hint */}
-                    <path d="M15,-40 Q25,-20 15,0 T20,40" />
-                    <path d="M30,-20 Q40,0 25,20" />
+                <g stroke={color} strokeWidth="2.5" fill="none" opacity="0.7" transform="translate(100 100) scale(2.0)">
+                    {/* Central sulcus */}
+                    <path d="M0,-45 C2,-20 -2,20 0,45" opacity="0.4" />
 
-                    {/* Center division */}
-                    <path d="M0,-45 L0,45" strokeOpacity="0.3" strokeWidth="1" />
+                    {/* Left hemisphere convolutions */}
+                    <path d="M-15,-30 Q-25,-25 -20,-15 T-25,0 T-15,15" />
+                    <path d="M-35,-10 Q-40,0 -35,10" />
+                    <path d="M-10,25 Q-20,35 -5,40" />
+
+                    {/* Right hemisphere convolutions */}
+                    <path d="M15,-30 Q25,-25 20,-15 T25,0 T15,15" />
+                    <path d="M35,-10 Q40,0 35,10" />
+                    <path d="M10,25 Q20,35 5,40" />
                 </g>
             </svg>
         </div>

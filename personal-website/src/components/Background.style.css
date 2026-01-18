@@ -97,9 +97,9 @@
 /* Desktop adjustments */
 @media (min-width: 1024px) {
   .brain-blob-container {
-    width: 700px;
-    height: 700px;
-    filter: blur(70px);
+    width: 600px;
+    height: 600px;
+    filter: blur(15px);
   }
 }
 
