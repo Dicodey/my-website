@@ -2,15 +2,92 @@
  * posts.js - Blog Post Data Store
  * 
  * Contains all blog posts as an array of objects. Each post has:
- * - id: URL-friendly slug for routing
+ * - id: URL-friendly slug for routing (use lowercase-with-dashes)
  * - title: Display title
- * - date: Publication date (YYYY-MM-DD)
+ * - date: Publication date (YYYY-MM-DD format, e.g., "2025-10-15")
  * - author: Post author name
- * - excerpt: Short preview text for listings
- * - readTime: Estimated reading time
- * - content: Full HTML content of the post
+ * - excerpt: Short preview text for listings (1-2 sentences)
+ * - readTime: Estimated reading time (e.g., "5 min read")
+ * - content: Full HTML content of the post (see formatting guide below)
  * 
- * Used by Blog.jsx (listing) and BlogPost.jsx (full view)
+ * ═══════════════════════════════════════════════════════════════════
+ * HOW TO ADD A NEW BLOG POST
+ * ═══════════════════════════════════════════════════════════════════
+ * 
+ * Copy this template and add it to the array below:
+ * 
+ *   {
+ *     id: "my-post-title",           // URL slug (lowercase, dashes instead of spaces)
+ *     title: "My Post Title",        // Display title
+ *     date: "2025-01-19",            // Today's date in YYYY-MM-DD
+ *     author: "Di",
+ *     excerpt: "A short teaser that appears on the blog listing page.",
+ *     readTime: "5 min read",
+ *     content: `
+ *       <p>Your post content here...</p>
+ *     `
+ *   },
+ * 
+ * ═══════════════════════════════════════════════════════════════════
+ * HTML FORMATTING GUIDE (for the "content" field)
+ * ═══════════════════════════════════════════════════════════════════
+ * 
+ * PARAGRAPHS:
+ *   <p>This is a paragraph of text.</p>
+ *   <p>This is another paragraph. Leave a blank line between them.</p>
+ * 
+ * BOLD TEXT:
+ *   <strong>This text will be bold</strong>
+ * 
+ * ITALIC TEXT:
+ *   <em>This text will be italic</em>
+ * 
+ * LINKS:
+ *   <a href="https://example.com">Click here</a>
+ * 
+ * HEADINGS (inside posts):
+ *   <h2>Big Heading</h2>
+ *   <h3>Smaller Heading</h3>
+ * 
+ * BULLET LISTS:
+ *   <ul>
+ *     <li>First item</li>
+ *     <li>Second item</li>
+ *   </ul>
+ * 
+ * NUMBERED LISTS:
+ *   <ol>
+ *     <li>First step</li>
+ *     <li>Second step</li>
+ *   </ol>
+ * 
+ * QUOTE/CALLOUT:
+ *   <blockquote>This is a quote or important callout.</blockquote>
+ * 
+ * ═══════════════════════════════════════════════════════════════════
+ * EXAMPLE POST:
+ * ═══════════════════════════════════════════════════════════════════
+ * 
+ *   {
+ *     id: "my-first-post",
+ *     title: "My First Blog Post",
+ *     date: "2025-01-19",
+ *     author: "Di",
+ *     excerpt: "Just getting started with blogging!",
+ *     readTime: "3 min read",
+ *     content: `
+ *       <p>Welcome to my <strong>first ever</strong> blog post!</p>
+ *       <p>Here's what I'll cover:</p>
+ *       <ul>
+ *         <li>Introduction</li>
+ *         <li>Main points</li>
+ *         <li>Conclusion</li>
+ *       </ul>
+ *       <p>For more info, <a href="https://example.com">click here</a>.</p>
+ *     `
+ *   },
+ * 
+ * ═══════════════════════════════════════════════════════════════════
  */
 export const posts = [
   {

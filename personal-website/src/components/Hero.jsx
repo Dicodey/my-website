@@ -6,8 +6,12 @@
  * - Profile photo with styled border
  * - Call-to-action buttons (Learn More, Get in Touch)
  * 
- * Uses responsive typography with clamp() for fluid scaling
- * and wrap-reverse flexbox for mobile-friendly layout.
+ * ═══════════════════════════════════════════════════════════════════
+ * HOW TO EDIT:
+ * - Line 31: Change "Hello, I'm Di." to your name
+ * - Lines 38-40: Change the tagline/description
+ * - To change the profile photo: replace src/assets/profile.jpg
+ * ═══════════════════════════════════════════════════════════════════
  */
 import profileImg from '../assets/profile.jpg';
 

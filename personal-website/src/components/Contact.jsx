@@ -1,9 +1,12 @@
 /**
  * Contact.jsx - Contact Information Section
  * 
- * "Let's Chat" section with email link and social media links.
- * Uses a centered card with glassmorphism effect (backdrop blur).
- * Includes hover animations on the email button.
+ * ═══════════════════════════════════════════════════════════════════
+ * HOW TO EDIT:
+ * - Line 26: Change the email address (appears twice - href and text)
+ * - Line 45: Change the email button text
+ * - Lines 48-50: Edit social media links (change # to your URLs)
+ * ═══════════════════════════════════════════════════════════════════
  */
 const Contact = () => {
     return (

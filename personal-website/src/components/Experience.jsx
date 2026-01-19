@@ -1,11 +1,13 @@
 /**
  * Experience.jsx - Work History Section
  * 
- * Displays professional experience and achievements in a
- * responsive card grid. Each card shows role, company,
- * time period, and a brief description.
- * 
- * Uses the shared .card class from index.css for consistent styling.
+ * ═══════════════════════════════════════════════════════════════════
+ * HOW TO EDIT:
+ * - Lines 11-36: Edit the "experiences" array
+ * - Each item has: role, company, period, description
+ * - To add a new one, copy an existing { } block and edit it
+ * - To remove one, delete the entire { } block including the comma
+ * ═══════════════════════════════════════════════════════════════════
  */
 const Experience = () => {
     const experiences = [

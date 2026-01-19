@@ -1,10 +1,11 @@
 /**
  * About.jsx - Personal Bio Section
  * 
- * Displays a brief personal introduction with a friendly,
- * conversational tone. Uses a semi-transparent card with
- * backdrop blur for visual contrast against the brain blob
- * background.
+ * ═══════════════════════════════════════════════════════════════════
+ * HOW TO EDIT:
+ * - Lines 24-35: Edit the paragraph text inside the <p> tags
+ * - Keep the <p> tags, just change the text between them
+ * ═══════════════════════════════════════════════════════════════════
  */
 const About = () => {
     return (

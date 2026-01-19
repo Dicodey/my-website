@@ -1,16 +1,87 @@
-# React + Vite
+# Di's Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React + Vite, featuring animated brain blob decorations.
 
-Currently, two official plugins are available:
+**Live site:** https://dicodey.github.io/my-website/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📝 How to Write & Publish Blog Posts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Step 1: Open the posts file
+Open `src/data/posts.js` in any text editor.
 
-## Expanding the ESLint configuration
+### Step 2: Add a new post
+Copy this template and paste it at the TOP of the `posts = [` array (after the opening bracket):
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```javascript
+  {
+    id: "my-post-title",
+    title: "My Post Title",
+    date: "2025-01-19",
+    author: "Di",
+    excerpt: "A short teaser for the listing page.",
+    readTime: "5 min read",
+    content: `
+      <p>Your post content goes here...</p>
+    `
+  },
+```
+
+### Step 3: Fill in your content using HTML formatting
+
+| To create... | Use this code |
+|--------------|---------------|
+| Paragraph | `<p>Your text here.</p>` |
+| **Bold** | `<strong>bold text</strong>` |
+| *Italic* | `<em>italic text</em>` |
+| Link | `<a href="https://url.com">link text</a>` |
+| Heading | `<h2>Big Heading</h2>` or `<h3>Smaller</h3>` |
+| Bullet list | `<ul><li>Item 1</li><li>Item 2</li></ul>` |
+| Numbered list | `<ol><li>Step 1</li><li>Step 2</li></ol>` |
+| Quote | `<blockquote>Quote text</blockquote>` |
+
+### Step 4: Publish
+Run this command in the project folder:
+```bash
+npm run deploy
+```
+
+This will build the site and publish it. The RSS feed at `/rss.xml` updates automatically!
+
+---
+
+## ✏️ Editing Other Sections
+
+| Section | File to edit |
+|---------|--------------|
+| Hero intro | `src/components/Hero.jsx` (lines 30-40) |
+| About Me | `src/components/About.jsx` (lines 24-34) |
+| Experience cards | `src/components/Experience.jsx` (the `experiences` array) |
+| Contact info | `src/components/Contact.jsx` (email, social links) |
+
+**Tip:** Just look for the text you want to change and edit it directly. Be careful not to delete any `<` or `>` symbols!
+
+---
+
+## 🚀 Quick Commands
+
+```bash
+npm run dev      # Start local preview at localhost:5173
+npm run build    # Build for production
+npm run deploy   # Build AND publish to GitHub Pages
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/     # Page sections (Hero, About, etc.)
+├── data/
+│   └── posts.js    # Blog post content (edit this!)
+├── assets/         # Images (profile photo)
+├── App.jsx         # Main app layout
+└── index.css       # Global styles
+```
