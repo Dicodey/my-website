@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Diderik | Behavioural Scientist Blog</title>
-  <link>https://dicodey.github.io/my-website</link>
+  <link>https://diypma.github.io/my-website</link>
   <description>Thoughts on human decision making and digital interventions.</description>
-  <atom:link href="https://dicodey.github.io/my-website/rss.xml" rel="self" type="application/rss+xml" />
+  <atom:link href="https://diypma.github.io/my-website/rss.xml" rel="self" type="application/rss+xml" />
   
     <item>
       <title><![CDATA[The Architecture of Choice]]></title>
-      <link>https://dicodey.github.io/my-website/#/blog/architecture-of-choice</link>
-      <guid>https://dicodey.github.io/my-website/#/blog/architecture-of-choice</guid>
+      <link>https://diypma.github.io/my-website/#/blog/architecture-of-choice</link>
+      <guid>https://diypma.github.io/my-website/#/blog/architecture-of-choice</guid>
       <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[Ever noticed how the snacks at eye level are always the ones you grab? That's not an accident.]]></description>
     </item>
   
     <item>
       <title><![CDATA[Digital Minimalism in a Hyper-connected World]]></title>
-      <link>https://dicodey.github.io/my-website/#/blog/digital-minimalism</link>
-      <guid>https://dicodey.github.io/my-website/#/blog/digital-minimalism</guid>
+      <link>https://diypma.github.io/my-website/#/blog/digital-minimalism</link>
+      <guid>https://diypma.github.io/my-website/#/blog/digital-minimalism</guid>
       <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[Six hours a day on screens? Yep, we've all been there. Here's how to take back your attention.]]></description>
     </item>
   
     <item>
       <title><![CDATA[The Sunk Cost Fallacy: Why Quitting is a Superpower]]></title>
-      <link>https://dicodey.github.io/my-website/#/blog/sunk-cost-fallacy</link>
-      <guid>https://dicodey.github.io/my-website/#/blog/sunk-cost-fallacy</guid>
+      <link>https://diypma.github.io/my-website/#/blog/sunk-cost-fallacy</link>
+      <guid>https://diypma.github.io/my-website/#/blog/sunk-cost-fallacy</guid>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
       <description><![CDATA[Ever stayed in a bad movie just because you paid for the ticket? You're not alone.]]></description>
     </item>
