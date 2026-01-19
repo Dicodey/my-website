@@ -1,3 +1,16 @@
+/**
+ * Background.jsx - Animated Brain Blob Background
+ * 
+ * Renders decorative brain images that float behind the page content.
+ * Each brain has a unique color (yellow, green, orange, red) and is 
+ * positioned at different scroll depths to create visual interest.
+ * 
+ * Features:
+ * - Absolute positioning with z-index: -1 to sit behind content
+ * - Gentle floating animation (40s cycle)
+ * - Responsive sizing via inline styles
+ * - Uses BASE_URL for correct asset paths in production
+ */
 import React from 'react';
 import './Background.style.css';
 

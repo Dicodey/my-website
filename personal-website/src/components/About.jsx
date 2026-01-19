@@ -1,3 +1,11 @@
+/**
+ * About.jsx - Personal Bio Section
+ * 
+ * Displays a brief personal introduction with a friendly,
+ * conversational tone. Uses a semi-transparent card with
+ * backdrop blur for visual contrast against the brain blob
+ * background.
+ */
 const About = () => {
     return (
         <section id="about">

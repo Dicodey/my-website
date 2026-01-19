@@ -1,3 +1,10 @@
+/**
+ * Navbar.jsx - Site Navigation Header
+ * 
+ * Fixed navigation bar that becomes opaque with blur effect
+ * when user scrolls past 50px. Uses React Router Links for
+ * smooth navigation between sections.
+ */
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 

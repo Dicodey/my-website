@@ -1,3 +1,14 @@
+/**
+ * Hero.jsx - Landing Section Component
+ * 
+ * The first section visitors see, featuring:
+ * - Name and tagline introduction
+ * - Profile photo with styled border
+ * - Call-to-action buttons (Learn More, Get in Touch)
+ * 
+ * Uses responsive typography with clamp() for fluid scaling
+ * and wrap-reverse flexbox for mobile-friendly layout.
+ */
 import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {

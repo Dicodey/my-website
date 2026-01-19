@@ -1,3 +1,16 @@
+/**
+ * App.jsx - Main Application Component
+ * 
+ * This is the root component that sets up:
+ * - React Router for navigation (using HashRouter for GitHub Pages compatibility)
+ * - HelmetProvider for SEO meta tags
+ * - The overall page layout (Navbar, main content, footer)
+ * - Background decoration (animated brain blobs)
+ * 
+ * Routes:
+ * - / (and /about, /experience, /thoughts, /contact) -> Home page with scroll-to-section
+ * - /blog/:id -> Individual blog post view
+ */
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';

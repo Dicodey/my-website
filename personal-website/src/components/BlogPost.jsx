@@ -1,3 +1,12 @@
+/**
+ * BlogPost.jsx - Individual Blog Post View
+ * 
+ * Renders a full blog post based on the :id URL parameter.
+ * Includes SEO meta tags via react-helmet-async and renders
+ * HTML content from the posts data store.
+ * 
+ * Falls back to "Post not found" if ID doesn't match any post.
+ */
 import { useParams, Link } from 'react-router-dom';
 import { posts } from '../data/posts';
 import { Helmet } from 'react-helmet-async';

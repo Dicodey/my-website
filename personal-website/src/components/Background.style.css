@@ -1,3 +1,15 @@
+/**
+ * Background.style.css - Brain Blob Background Styles
+ * 
+ * Styles for the animated brain decoration layer:
+ * - .background-wrapper: Fixed container behind all content (z-index: -1)
+ * - .blobs-container: Parent for all brain blobs
+ * - .brain-blob-container: Individual blob wrapper with float animation
+ * - .brain-blob-image: The actual brain image with drop shadow
+ * 
+ * Note: Blob positions are set via inline styles in Background.jsx
+ */
+
 .background-wrapper {
   position: absolute;
   top: 0;
@@ -54,47 +66,6 @@
   100% {
     transform: translate(-20px, 25px) rotate(-2deg);
   }
-}
-
-/* Individual blob positions */
-.blob-1 {
-  top: 150px;
-  left: -5%;
-}
-
-.blob-2 {
-  top: 600px;
-  right: -10%;
-}
-
-.blob-3 {
-  top: 1200px;
-  left: 0%;
-  animation-duration: 45s;
-}
-
-.blob-4 {
-  top: 1800px;
-  right: -5%;
-  animation-duration: 38s;
-}
-
-.blob-5 {
-  top: 2500px;
-  left: 20%;
-  animation-duration: 42s;
-}
-
-.blob-6 {
-  top: 3200px;
-  left: 0%;
-  animation-duration: 40s;
-}
-
-.blob-7 {
-  top: 3800px;
-  right: 10%;
-  animation-duration: 44s;
 }
 
 /* Desktop adjustments */

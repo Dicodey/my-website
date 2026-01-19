@@ -1,3 +1,10 @@
+/**
+ * Blog.jsx - Blog Post Listing Section
+ * 
+ * Displays a grid of blog post preview cards with title, date,
+ * read time, excerpt, and link to full article. Posts are 
+ * loaded from the data/posts.js file.
+ */
 import { Link } from 'react-router-dom';
 import { posts } from '../data/posts';
 

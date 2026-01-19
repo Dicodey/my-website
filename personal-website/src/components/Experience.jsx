@@ -1,3 +1,12 @@
+/**
+ * Experience.jsx - Work History Section
+ * 
+ * Displays professional experience and achievements in a
+ * responsive card grid. Each card shows role, company,
+ * time period, and a brief description.
+ * 
+ * Uses the shared .card class from index.css for consistent styling.
+ */
 const Experience = () => {
     const experiences = [
         {

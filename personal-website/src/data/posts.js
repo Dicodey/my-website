@@ -1,3 +1,17 @@
+/**
+ * posts.js - Blog Post Data Store
+ * 
+ * Contains all blog posts as an array of objects. Each post has:
+ * - id: URL-friendly slug for routing
+ * - title: Display title
+ * - date: Publication date (YYYY-MM-DD)
+ * - author: Post author name
+ * - excerpt: Short preview text for listings
+ * - readTime: Estimated reading time
+ * - content: Full HTML content of the post
+ * 
+ * Used by Blog.jsx (listing) and BlogPost.jsx (full view)
+ */
 export const posts = [
   {
     id: "architecture-of-choice",

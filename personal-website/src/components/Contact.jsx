@@ -1,3 +1,10 @@
+/**
+ * Contact.jsx - Contact Information Section
+ * 
+ * "Let's Chat" section with email link and social media links.
+ * Uses a centered card with glassmorphism effect (backdrop blur).
+ * Includes hover animations on the email button.
+ */
 const Contact = () => {
     return (
         <section id="contact" style={{ paddingBottom: '4rem' }}>

@@ -1,3 +1,15 @@
+/**
+ * index.css - Global Styles & Design System
+ * 
+ * Defines CSS custom properties (variables) for:
+ * - Color palette (background, text, accent colors)
+ * - Typography (font families, sizes)
+ * - Spacing scale
+ * - Transition timing
+ * 
+ * Also includes base reset styles, typography defaults,
+ * responsive container, and utility classes like .card
+ */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Merriweather:wght@700&display=swap');
 
 :root {
