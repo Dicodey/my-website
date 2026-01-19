@@ -37,8 +37,7 @@ const Background = () => {
                             right: blob.right,
                             width: blob.size,
                             height: blob.size,
-                            animationDelay: blob.delay,
-                            opacity: 0.8
+                            animationDelay: blob.delay
                         }}
                     >
                         <div
