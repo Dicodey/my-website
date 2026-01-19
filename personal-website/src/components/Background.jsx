@@ -4,10 +4,10 @@ import './Background.style.css';
 
 const Background = () => {
     const blobs = [
-        { image: `${import.meta.env.BASE_URL}brain-yellow.png`, top: '-200px', left: '-250px', size: '650px', delay: '0s' },
-        { image: `${import.meta.env.BASE_URL}brain-green.png`, top: '1000px', right: '10%', size: '500px', delay: '-15s' },
-        { image: `${import.meta.env.BASE_URL}brain-orange.png`, top: '2200px', right: '-15%', size: '550px', delay: '-5s' },
-        { image: `${import.meta.env.BASE_URL}brain-red.png`, top: '3400px', left: '5%', size: '450px', delay: '-10s' },
+        { image: `${import.meta.env.BASE_URL}brain-yellow.png`, top: '-200px', left: '-250px', size: '520px', delay: '0s' },
+        { image: `${import.meta.env.BASE_URL}brain-green.png`, top: '1000px', right: '10%', size: '400px', delay: '-15s' },
+        { image: `${import.meta.env.BASE_URL}brain-orange.png`, top: '2200px', right: '-15%', size: '440px', delay: '-5s' },
+        { image: `${import.meta.env.BASE_URL}brain-red.png`, top: '3400px', left: '5%', size: '360px', delay: '-10s' },
     ];
 
     return (
