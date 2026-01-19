@@ -2,7 +2,7 @@
 
 A personal portfolio website built with React + Vite, featuring animated brain blob decorations.
 
-**Live site:** https://dicodey.github.io/my-website/
+**Live site:** https://diypma.github.io/my-website/
 
 ---
 

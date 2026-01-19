@@ -35,6 +35,6 @@ npm run deploy || { echo "❌ Deployment failed!"; exit 1; }
 echo ""
 echo "----------------------------------------"
 echo "✅ Success! Your site is live at:"
-echo "   https://dicodey.github.io/my-website/"
+echo "   https://diypma.github.io/my-website/"
 echo "   (It may take 1-2 minutes to update)"
 echo "----------------------------------------"
