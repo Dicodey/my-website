@@ -61,7 +61,10 @@ const Hero = () => {
                             color: 'var(--accent-primary)',
                             borderRadius: '4px',
                             fontWeight: 600,
-                            fontSize: 'clamp(0.9rem, 2vw, 1rem)'
+                            fontSize: 'clamp(0.9rem, 2vw, 1rem)',
+                            backgroundColor: 'rgba(255, 255, 255, 0.85)',
+                            backdropFilter: 'blur(8px)',
+                            WebkitBackdropFilter: 'blur(8px)'
                         }}>
                             Get in Touch
                         </a>
